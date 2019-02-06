@@ -1,19 +1,23 @@
-name = input("What is your name?: \n> ")
-age = input("How old are you?: \n> ")
-height = input("How tall are you in inches?: \n> ")
-weight = input("How heavy are you in kilograms?: \n> ")
-eyeColour = input("What colour are your eyes?: \n> ")
-hairColour = input("What colour is your hair?: \n> ")
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))
+user_height = int(input("Enter your height in inches: "))
+user_weight = int(input("Enter your weight in pounds: "))
+user_eye_colour = input("Enter your eye colour: ")
+user_hair_colour = input("Enter your hair colour: ")
 
-if (int(age)>=12 and int(age)<=19):
-  print("You're a teenager")
-if (int(age)>=100):
-  print("Merry birthday")
-if (int(height)>5):
-  print("You're about average height")
-if (int(height)<100):
-  print("Don't worry, it's normal to be shorter than 100 inches tall")
-if (int(weight)>100):
-  print(":))))))))))))")
-if (int(weight)<30):
-  print("((((((((((((:")
+if user_age > 0 and user_age < 12:
+    print("You're a child.")
+if user_age > 12 and user_age < 20:
+    print("You're a teenager.")
+if user_age > 20:
+    print("You're an adult.")
+
+if user_height > 69:
+    print("You're taller than me.")
+else:
+    print("You're shorter than me.")
+
+if user_weight > 130:
+    print("You're heavier than me.")
+else:
+    print("You're lighter than me.")
